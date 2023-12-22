@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>sudoku v4.0</title>
+
+    <!--Style Sheets-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Geologica|Playfair">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+
+    <!--JavaScripts-->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+
+<div class="w3-top"> <!--start of bar-->
+
+    <div class="w3-bar w3-black w3-center"> <!--nav Bar-->
+
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+
+    </div>
+
+    <div class="w3-container w3-center" style="background-color: rgb(21, 34, 56);"> <!--Title Bar-->
+
+        <h1 style="letter-spacing: 0.8em;color: white;">ROBU SUDOKU</h1><!--Change Name later-->
+
+    </div>
+
+</div> <!--end of bar-->
+
+
+<!--Start Content HOME-->
+<div class="mCont">
+
+    <div class="shade">
+
+    <div id="home" style="margin-bottom:2em"> <!--w3 content controls the margins/padding of all the information/'content'-->
+        
+        <div class="w3-center w3-container w3-white" style="margin: 2em;">
+            
+            <p style="margin-bottom: 5em;"></p> <!--This is to make sure all the site contents are below the Top Bar-->
+            
+            <!--Sudoku board-->
+            <div class="w3-center">
+                
+                <table id="sudoku" style="margin-left:auto;margin-right:auto;margin-bottom: 2em;"> <!--Sudoku Table itself-->
+                    <tbody>
+                        <tr> 
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="4" /></td>
+                            <td><input type="text" value="1" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="9" /></td>
+                            <td><input type="text" value="2" /></td>
+                            <td><input type="text" value="7" /></td>
+                            <td><input type="text" value="3" /></td>
+                            <td><input type="text" value="8" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="7"/></td>
+                            <td><input type="text" value="6"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="1"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="2"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="2" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="5" /></td>
+                            <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="6"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="5"/></td>
+                            <td><input type="text" value="1"/></td>
+                            <td><input type="text" value="8"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="4"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="8" /></td>
+                            <td><input type="text" value="3" /></td>
+                            <td><input type="text" value="4" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="2"/></td>
+                            <td><input type="text" value="8"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="1"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="1"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="9"/></td>
+                            <td><input type="text" value="4"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="3"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="6" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="8" /></td>
+                            <td><input type="text" value="4" /></td>
+                            <td><input type="text" value="7" /></td>
+                            <td><input type="text" value="5" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="2"/></td>
+                            <td><input type="text" value="8"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="7"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="9"/></td>
+                            <td><input type="text" /></td>
+                            <td><input type="text" value="6"/></td>
+                        </tr>
+                        </tbody>
+                    </table>
+              
+                </div>
+            
+                <button onclick="saveValues()" class="fadedButton" style="margin-bottom: 1em;">Submit</button>
+
+        </div> <!--end of table container-->
+
+
+        <!--Text-->
+        <div class="w3-center" style="margin-bottom: 3em;">
+
+            <p style="line-height: 30px;"> 
+                One of the all-time most played puzzle games is sudoku. Sudoku is a great mental exercise as a logic game. You will soon start to see gains in your ability to focus and think clearly if you play Sudoku every day. Play a game right now.
+            </p>
+
+        </div>
+
+        <!--Buttons for Difficulty-->
+        <div class="pStyle w3-half">
+
+            <h3 style="font-family:'Geologica';">Game Modes</h3>
+
+            <ul>
+                <li>Easy</li>
+
+                <li>Medium</li>
+
+                <li>Hard</li>
+            </ul>
+
+        </div>
+
+        <!--Image of sample board and tips to play sudoku-->
+        <div class="w3-half">
+            <img src="images/sampleboard.png" alt="SAMPLE BOARD">
+        </div>
+
+
+        <p class="w-center">___________________________________________________________________________ </p>
+
+
+        <div class="w3-container" style="font-size: small;background: rgb(35, 57, 93, 0.5);">
+
+            <div class="w3-half" style="padding:4em;">
+
+                <p>
+                    Tip 1: Search for sections containing multiple numbers and fill empty cells by trying unused numbers. Consider the existing numbers in the same row, column, and 3x3 grid to determine the correct placement.
+                </p>
+
+            </div>
+
+            <div class="w3-half" style="padding:4em;">
+
+                <p>
+                    Tip 2: Visually divide the grid into 3 columns and 3 rows. find columns or grids with duplicate numbers. In the remaining 9-cell section, there must be a third copy of the same number. Carefully look each position to find the missing number's location.
+                </p>
+
+            </div>
+
+        </div>
+
+        <p class="w-center">___________________________________________________________________________ </p>
+
+
+        <h3 class="header02" style="color: white;font-size: 36px;margin: 1em;">Difficulties: </h3>
+
+        <!--Creating oon click buttons for game modes, which will redirect to respective functions-->
+        <div style="margin: 3em;">
+
+            <div class="w3-third" style="padding:10px;">
+                <button onclick="difficultyEasy()" class="button-19" role="button">Easy</button>
+            </div>
+
+            <div class="w3-third" style="padding:10px;">
+                <button onclick="difficultyMedium()" class="button-19" role="button">Medium</button>
+            </div>
+
+            <div class="w3-third" style="padding:10px;">
+                <button onclick="difficultyHard()" class="button-19" role="button">Hard</button>
+            </div>
+
+        </div>
+
+        <p class="w-center">___________________________________________________________________________ </p>
+
+
+        <!--Rules-->
+        <h3 class="header02" style="color: white;font-size: 36px;margin: 1em;">Rules: </h3>
+
+        <div class="rules">
+
+            <ol type="1">
+                <li>Each row must contain all the digits from 1 to 9 without repetition. In other words, no two cells in the same row can have the same digit.</li>
+                <li>Each column must contain all the digits from 1 to 9 without repetition. This means that no two cells in the same column can have the same digit.</li>
+                <li>Each box (3x3 subgrid) must contain all the digits from 1 to 9 without repetition. This implies that no two cells within the same box can have the same digit.</li>
+                <li>The initial puzzle will have some of the cells pre-filled with numbers. These pre-filled cells serve as hints or clues to help you get started.</li>
+                <li>Your task is to fill in the remaining empty cells with numbers from 1 to 9, following the aforementioned rules.</li>
+                <li> There is only one possible solution to a Sudoku puzzle that adheres to the rules.</li>
+             </ol>
+        </div>
+        
+    </div> <!--End of home page-->
+    <!---------------------------------------------------------------------------------------
+    <!--Start Content ABOUT-->
+    <div id="about">
+        <h1 class="header02 w3-container mWhite">About Us</h1>
+
+        <div style="margin-top:2em;margin-bottom:4em;padding: 2px;" class="w3-half w3-center">
+
+            <img src="images/abidface.png" alt="ABID AZAD" style="width:60%">
+            <p>"I love exploring new technologies and experimenting with code. It's <br>amazing how a few lines can create something impactful."</p>
+
+        </div>
+        <div style="margin-top:2em;margin-bottom:4em;padding: 2px;" class="w3-half w3-center">
+
+            <img src="images/nashwanfacehalf.png" alt="NASHWAN KHAN" style="width:60%">
+            <p>"Coding is like solving a never-ending puzzle. It's challenging, <br>but the satisfaction of making things work is worth it!"</p>
+
+        </div>
+    </div>
+
+    <div style="margin-top:2em;">
+        <p> Thank you for playing our Sudoku game! We appreciate your support and hope you enjoyed the puzzles. We look forward to your return for more fun challenges! 
+            <br> <br>
+            Best regards, <br>
+            Nazhad Industries.
+        </p>
+    </div>
+
+    </div> <!--End of shade-->
+</div> <!--End of mCOnt-->
+</body>
+</html>

@@ -1,0 +1,193 @@
+/*Note: W3School premade style sheet is being used (https://www.w3schools.com/w3css/4/w3.css)*/
+body {
+	background-image: url('images/sitebackground.jpg');
+}
+
+p {
+	font-family:'Geologica';
+	font-size: 18px;
+	color: white;
+	line-height: 25px;
+}
+
+.fadedButton {
+	background-color: #f4511e;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+.fadedButton:hover {opacity: 1}
+
+.header02 {
+	font-family:'Geologica';
+	letter-spacing: 8px;
+	text-align: center;
+	margin-top:2em;
+}
+
+.mWhite {
+	background: rgba(255, 255, 255, 0.85);
+}
+
+li {
+	padding-bottom: 15px
+}
+
+.pStyle {
+	font-family:'Geologica';
+	font-size: 18px;
+	color: white;
+	line-height: 25px;
+}
+
+.header01 {
+	font-weight: 600;
+	font-family:Verdana;
+	letter-spacing: 12px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 32px;
+	padding-bottom: 10px;
+}
+
+.rules {
+	font-family:'Geologica';
+	font-size: 18px;
+	color: white;
+	line-height: 25px;
+}
+
+.pStyle02 {
+	font-family:'Geologica';
+	font-weight: 100;
+	font-size: 18px;
+	color: white;
+	line-height: 25px;
+}
+
+.mCont {
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 2;
+
+	max-width: 860px;
+	
+}
+
+.shade {
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 1;
+
+	max-width: 8900px;
+	background: rgba(1, 6, 10, 0.7);
+	padding:4em;
+}
+
+
+/* CSS 
+
+<button class="button-19" role="button">Button 19</button>
+
+*/
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+table {
+	border-collapse: collapse;
+  }
+
+  td {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid #ccc;
+  }
+
+  input {
+	width: 30px;
+	height: 30px;
+	font-size: 16px;
+	text-align: center;
+	border: none;
+	outline: none;
+  }
+
+  input::placeholder {
+	color: #888;
+  }
+
+  input:focus {
+	border: 2px solid dodgerblue;
+  }
+
+  button {
+	margin-top: 10px;
+	padding: 5px 10px;
+	font-size: 16px;
+  }
